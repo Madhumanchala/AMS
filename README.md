@@ -1,8 +1,14 @@
+
+This Projects Help you to calculate Employee Working hours and Non Working hours From In Time And Out Time From punching Machine File After calculation it gives Download option 
+
 To Import Ams Project In Eclipse Just Copy Clone Https Url Given Below 
 https://github.com/Madhumanchala/AMS.git
 goto Eclipse Import Projects FRom Git 
 then Paster Url 
 then Select Branch Then Select Project Click Finish Done 
+
+[file2.xlsx](https://github.com/user-attachments/files/18886311/file2.xlsx)
+[file1.xlsx](https://github.com/user-attachments/files/18886310/file1.xlsx)
 
 After that Configure Build Path In Eclipse 
 Thank you.
