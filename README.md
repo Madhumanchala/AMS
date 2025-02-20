@@ -7,11 +7,16 @@ goto Eclipse Import Projects FRom Git
 then Paster Url 
 then Select Branch Then Select Project Click Finish Done 
 
+After that Configure Build Path In Eclipse 
+Thank you.
+
+
+upload Below Two Files 
 [file2.xlsx](https://github.com/user-attachments/files/18886311/file2.xlsx)
 [file1.xlsx](https://github.com/user-attachments/files/18886310/file1.xlsx)
 
-After that Configure Build Path In Eclipse 
-Thank you.
+you will get This Below File After Calculating Working Hours 
+[CalculatedFile.xlsx](https://github.com/user-attachments/files/18886337/CalculatedFile.xlsx)
 
 <img width="464" alt="Screenshot 2025-02-20 174207" src="https://github.com/user-attachments/assets/fa78b6be-6fdd-46f4-8568-173926298818" />
 <img width="509" alt="Screenshot 2025-02-20 174130" src="https://github.com/user-attachments/assets/31987ff7-3f25-4d73-a89c-28c79edf919c" />
