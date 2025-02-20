@@ -1,0 +1,47 @@
+package com.comunus.ams.service;
+
+@Service
+public class FileService {
+	
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+
+	public boolean saveFile(String fileName, byte[] data) {
+		String base64Data = Base64.getEncoder().encodeToString(data);
+        FileModel fileEntity = new FileModel();
+        fileEntity.setFileName(fileName);
+        fileEntity.setFileData(base64Data);
+       String sql ="Insert into filedata(file_name,file_data) values(?,?)";
+       
+       try {
+    	   int update = jdbcTemplate.update(sql,fileEntity.getFileName(),fileEntity.getFileData());
+           
+           if(update >0)
+           {
+        	   return true;
+           }
+           else
+           {
+        	   return false;
+           }
+       }
+       catch (Exception e) {
+		// TODO: handle exception
+    	   e.printStackTrace();
+    	   return false;
+	}
+    }
+	
+	public List<FileModel> getFile(String fileName) {
+	    List<FileModel> fm = new ArrayList<>();
+	    try { 
+	       //SELECT File_data FROM ams.filedata where file_name=
+	    	String sql = "SELECT File_data FROM ams.filedata WHERE file_name = ?";
+	        System.out.println("Executing SQL: " + sql + " with fileName: " + fileName); // Debugging log
+	        fm = jdbcTemplate.query(sql, new Object[]{fileName}, BeanPropertyRowMapper.newInstance(FileModel.class));
+	        return fm.isEmpty() ? Collections.emptyList() : Collections.unmodifiableList(fm);
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	        return Collections.emptyList();
+	    }
+	}

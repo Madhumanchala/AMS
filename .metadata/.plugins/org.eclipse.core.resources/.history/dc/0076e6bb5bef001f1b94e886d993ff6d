@@ -1,0 +1,5 @@
+package com.comunus.ams.service;
+
+public class FileService {
+
+}

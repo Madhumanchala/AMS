@@ -1,0 +1,13 @@
+package com.comunus.ams.controller;
+
+@Controller
+@RequestMapping("/ams/v1")
+public class FileController {
+	
+	@GetMapping("/")
+	public String goToHome() {
+		System.out.println("Inside the Dashboard controller");
+		return "index";
+	}
+
+}

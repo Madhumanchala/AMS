@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+D:\AMS_Workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1039529316.index
+4040555389.index
+3747573476.index
